@@ -100,3 +100,31 @@ ul {
   font-size: 24px;
   color: #fff;
 }
+
+.header-scroll {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  /* width: 85px; */
+  /* height: 55px; */
+  padding-bottom: 34px;
+
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-scroll::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/arrow-down.svg");
+}
