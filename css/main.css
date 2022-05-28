@@ -1,0 +1,102 @@
+/*font-family: 'Lobster', cursive;
+font-family: 'PT Sans', sans-serif;*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* header */
+
+.header {
+  position: relative;
+  height: 800px;
+  padding-top: 50px;
+  background-color: #265847;
+  background-image: url("./../img/header-br.jpg");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1170px;
+}
+.logo {
+  font-family: "Lobster", cursive;
+
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+}
+.header-nav {
+  font-style: 22px;
+  color: #fff;
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-list-item {
+  margin-right: 50px;
+}
+
+.header-nav-list-item:last-item {
+  margin-right: 0;
+}
+
+.header-nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*на 3й минуте*/
+  text-align: center;
+  width: 1170px;
+}
+.header-title {
+  font-weight: bold;
+  font-size: 60px;
+
+  color: #fff;
+}
+
+.header-content p {
+  font-size: 24px;
+  color: #fff;
+}
