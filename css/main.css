@@ -11,6 +11,15 @@ body {
   margin: 0;
 
   font-family: "PT Sans", sans-serif;
+  color: #31405b;
+}
+
+input {
+  font-family: "PT Sans", sans-serif;
+}
+
+label {
+  cursor: pointer;
 }
 
 h1,
@@ -49,6 +58,41 @@ ul {
 
 .bgcolor {
   background-color: #f2f8f6;
+}
+
+.main-header {
+  /* margin-bottom: 40px; */
+
+  font-weight: bold;
+  font-size: 54px;
+  color: #314058;
+}
+
+.inner-page {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.button {
+  display: inline-block;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 50px;
+
+  background: #0ac883;
+  box-shadow: 0px 8px 20px rgba(24, 219, 148, 0.35);
+  border-radius: 50px;
+  border: none;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+
+  cursor: pointer;
 }
 
 /* header */
@@ -199,12 +243,8 @@ ul {
   width: 470px;
 }
 
-.header-2 {
-  margin-bottom: 40px;
-
-  font-weight: bold;
-  font-size: 54px;
-  color: #314058;
+.main-content-header {
+  margin-bottom: 20px;
 }
 
 .main-content-text {
@@ -222,24 +262,6 @@ ul {
 .main-content-text p {
   margin-top: 0;
   margin-bottom: 15px;
-}
-
-.button {
-  display: inline-block;
-
-  padding-left: 40px;
-  padding-right: 40px;
-  height: 50px;
-
-  background: #0ac883;
-  box-shadow: 0px 8px 20px rgba(24, 219, 148, 0.35);
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 50px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
 }
 
 .main-img {
@@ -326,11 +348,11 @@ ul {
 }
 
 /* Inner Page Tours */
-
+/* 
 .inner-page-tours {
   padding-top: 60px;
   padding-bottom: 100px;
-}
+} */
 
 .inner-page-tours-header {
   margin-bottom: 60px;
@@ -531,3 +553,257 @@ ul {
 .article-page-article > *:last-child {
   margin-bottom: 0;
 }
+
+/* Contacts page */
+
+.contacts-header {
+  margin-bottom: 40px;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contacts-info {
+  width: 470px;
+}
+
+.contact-block + .contacts-block {
+  margin-top: 40px;
+}
+
+.contact-block-title {
+  margin-bottom: 20px;
+
+  color: #31405b;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.contact-block-body {
+  font-size: 20px;
+}
+
+.contacts-list {
+}
+
+.contacts-list li {
+  margin-bottom: 15px;
+}
+
+.contacts-list a {
+  color: #138ece;
+  text-decoration: none;
+}
+
+.contact-list-icon {
+  position: relative;
+  padding-left: 39px;
+}
+
+.contact-list-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  /* background-color: red; */
+}
+
+.contact-list-icon.phone::before {
+  background-image: url("./../img/icons/phone.svg");
+}
+
+.contact-list-icon.mail::before {
+  background-image: url("./../img/icons/mail.svg");
+}
+
+.contact-list-icon.address::before {
+  background-image: url("./../img/icons/map-pin.svg");
+}
+
+/* Contact form */
+
+.form {
+  padding: 40px;
+  width: 630px;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(211, 211, 211, 0.25);
+}
+
+/* 3ур законч */
+
+.form-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group:last-of-type {
+  margin-bottom: 35px;
+}
+
+.form-group-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-group-row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group-row > .input + .input {
+  margin-left: 10px;
+} /* 15-37 */
+
+.input {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+
+  background: #eee;
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #31405b;
+}
+
+.input::placeholder {
+  color: rgba(49, 64, 91, 0.5);
+}
+/* 10-47 */
+
+.radio-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.real-radio {
+  appearance: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.custom-radio {
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+
+  margin-right: 10px;
+
+  width: 20px;
+  height: 20px;
+
+  background: #eee;
+  border: 1px solid #c0c0c0;
+  border-radius: 50%;
+}
+
+.real-radio:focus + .custom-radio {
+  /* border: 1px solid #2AB698; */
+  box-shadow: 0 0 0px 2px #333;
+  /* outline: 2px solid black; */
+  /* 0 0 10px rgba(42, 182, 152, 0.8), */
+}
+
+.custom-radio::before {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #2ab698;
+  border-radius: 50%;
+
+  transition: transform 0.2s ease-in;
+}
+
+.real-radio:checked + .custom-radio::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 5ур радиок закончил */
+
+/* Checkboxes */
+
+.checkbox-row {
+  display: flex; /*block*/
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+}
+
+.real-checkbox {
+  appearance: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.custom-checkbox {
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #eee;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.real-checkbox:focus + .custom-checkbox {
+  /* border: 1px solid #2AB698; */
+  box-shadow: 0 0 0px 2px #333;
+  /* outline: 2px solid black; */
+  /* 0 0 10px rgba(42, 182, 152, 0.8), */
+}
+
+.custom-checkbox::before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(0);
+
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icons/check.svg");
+
+  transition: transform 0.2s ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 7 закон*/
