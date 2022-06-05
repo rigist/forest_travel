@@ -61,8 +61,6 @@ ul {
 }
 
 .main-header {
-  /* margin-bottom: 40px; */
-
   font-weight: bold;
   font-size: 54px;
   color: #314058;
@@ -348,14 +346,10 @@ ul {
 }
 
 /* Inner Page Tours */
-/* 
-.inner-page-tours {
-  padding-top: 60px;
-  padding-bottom: 100px;
-} */
 
 .inner-page-tours-header {
   margin-bottom: 60px;
+
   text-align: center;
 }
 
@@ -363,6 +357,7 @@ ul {
 
 .card-link-wrapper {
   display: inline-block;
+
   color: #fff;
   text-decoration: none;
 }
@@ -374,6 +369,7 @@ ul {
 .cards-first-row {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 30px;
 }
 
@@ -401,6 +397,8 @@ ul {
 .card-title-wrapper {
   display: flex;
   align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
 
   padding-left: 30px;
   padding-right: 30px;
@@ -409,9 +407,6 @@ ul {
 
   background-color: #a6a6a6;
   color: #fff;
-
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .card.extreme-color .card-title-wrapper {
@@ -570,7 +565,7 @@ ul {
   width: 470px;
 }
 
-.contact-block + .contacts-block {
+.contact-block + .contact-block {
   margin-top: 40px;
 }
 
@@ -586,32 +581,31 @@ ul {
   font-size: 20px;
 }
 
-.contacts-list {
-}
-
-.contacts-list li {
+.contact-list li {
   margin-bottom: 15px;
 }
 
-.contacts-list a {
+.contact-list a {
   color: #138ece;
   text-decoration: none;
 }
 
 .contact-list-icon {
   position: relative;
+
   padding-left: 39px;
 }
 
 .contact-list-icon::before {
   content: "";
+
   display: block;
   position: absolute;
   top: 0;
   left: 0;
+
   width: 24px;
   height: 24px;
-  /* background-color: red; */
 }
 
 .contact-list-icon.phone::before {
@@ -631,14 +625,14 @@ ul {
 .form {
   padding: 40px;
   width: 630px;
+
   background: #fff;
   box-shadow: 0px 10px 20px rgba(211, 211, 211, 0.25);
 }
 
-/* 3ур законч */
-
 .form-title {
   margin-bottom: 20px;
+
   font-size: 28px;
   font-weight: 700;
 }
@@ -653,29 +647,33 @@ ul {
 
 .form-group-title {
   margin-bottom: 15px;
+
   font-size: 20px;
   font-weight: 700;
 }
 
 .form-group-row {
   margin-bottom: 10px;
+
   display: flex;
   justify-content: space-between;
 }
 
 .form-group-row > .input + .input {
   margin-left: 10px;
-} /* 15-37 */
+}
 
 .input {
-  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+
+  width: 100%;
   height: 50px;
 
   background: #eee;
-  border: 1px solid #c0c0c0;
-  border-radius: 6px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -685,57 +683,59 @@ ul {
 .input::placeholder {
   color: rgba(49, 64, 91, 0.5);
 }
-/* 10-47 */
 
 .radio-row {
   display: flex;
   align-items: flex-start;
+
   margin-bottom: 20px;
 }
 
 .real-radio {
+  position: absolute;
   appearance: none;
+
   width: 0;
   height: 0;
-  position: absolute;
+
   opacity: 0;
   z-index: -1;
 }
 
 .custom-radio {
-  flex-shrink: 0;
   position: relative;
-  display: inline-block;
+  flex-shrink: 0;
   vertical-align: bottom;
 
+  display: inline-block;
+
   margin-right: 10px;
+
+  border: 1px solid #c0c0c0;
+  border-radius: 50%;
 
   width: 20px;
   height: 20px;
 
   background: #eee;
-  border: 1px solid #c0c0c0;
-  border-radius: 50%;
 }
 
 .real-radio:focus + .custom-radio {
-  /* border: 1px solid #2AB698; */
   box-shadow: 0 0 0px 2px #333;
-  /* outline: 2px solid black; */
-  /* 0 0 10px rgba(42, 182, 152, 0.8), */
 }
 
 .custom-radio::before {
-  display: block;
-
   position: absolute;
   top: 50%;
   left: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  display: block;
   transform: translate(-50%, -50%) scale(0);
 
   content: "";
-  width: 12px;
-  height: 12px;
   background: #2ab698;
   border-radius: 50%;
 
@@ -746,57 +746,61 @@ ul {
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* 5ур радиок закончил */
-
 /* Checkboxes */
 
 .checkbox-row {
-  display: flex; /*block*/
+  display: flex;
   align-items: flex-start;
 
   margin-bottom: 20px;
 }
 
 .real-checkbox {
+  position: absolute;
   appearance: none;
+
   width: 0;
   height: 0;
-  position: absolute;
+
   opacity: 0;
   z-index: -1;
 }
 
 .custom-checkbox {
-  flex-shrink: 0;
   position: relative;
-  display: inline-block;
+  flex-shrink: 0;
   vertical-align: bottom;
+
+  display: inline-block;
+
   margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  background: #eee;
+
   border: 1px solid #c0c0c0;
   border-radius: 2px;
+
+  width: 20px;
+  height: 20px;
+
+  background: #eee;
 }
 
 .real-checkbox:focus + .custom-checkbox {
-  /* border: 1px solid #2AB698; */
   box-shadow: 0 0 0px 2px #333;
-  /* outline: 2px solid black; */
-  /* 0 0 10px rgba(42, 182, 152, 0.8), */
 }
 
 .custom-checkbox::before {
-  display: block;
   position: absolute;
+
+  display: block;
   top: 50%;
   left: 50%;
+
+  width: 17px;
+  height: 17px;
 
   transform: translate(-50%, -50%) scale(0);
 
   content: "";
-  width: 17px;
-  height: 17px;
   background-image: url("../img/icons/check.svg");
 
   transition: transform 0.2s ease-in;
@@ -805,5 +809,3 @@ ul {
 .real-checkbox:checked + .custom-checkbox::before {
   transform: translate(-50%, -50%) scale(1);
 }
-
-/* 7 закон*/
